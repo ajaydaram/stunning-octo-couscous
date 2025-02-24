@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            {% for link in site.data.navigation %}
+                <li>
+                    <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+                    {% if link.subtopics %}
+                        <ul>
+                        {% for subtopic in link.subtopics %}
+                            <li><a href="{{ subtopic.url | relative_url }}">{{ subtopic.title }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>{{ page.title }}</h1>
+        <div class="archive-content">
+            {% if site.collections %}
+                <h2>Collections</h2>
+                <ul>
+                {% for collection in site.collections %}
+                    {% if collection.output %}
+                        <li><a href="{{ site.baseurl }}/{{ collection.label }}">{{ collection.label | capitalize }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if site.categories %}
+                <h2>Categories</h2>
+                <ul>
+                {% for category in site.categories %}
+                    <li><a href="/categories/{{ category[0] }}">{{ category[0] }} ({{ category[1].size }})</a></li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if site.tags %}
+                <h2>Tags</h2>
+                <ul>
+                {% for tag in site.tags %}
+                    <li><a href="/tags/{{ tag[0] }}">{{ tag[0] }} ({{ tag[1].size }})</a></li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if site.years %}
+                <h2>Archives by Year</h2>
+                <ul>
+                {% for year in site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+                    <li><a href="/year/{{ year.name }}">{{ year.name }} ({{ year.items.size }})</a></li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} Your Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+title: My Jekyll Site
+email: your-email@example.com
+description: >-
+  This is my awesome Jekyll site.
+baseurl: ""
+url: "http://yourdomain.com"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-sitemap
+
+paginate: 10
+paginate_path: "/page:num/"
+
+collections:
+  articles:
+    output: true
+    permalink: /articles/:title/
+  sermons:
+    output: true
+    permalink: /sermons/:title/
+  posts:
+    output: true

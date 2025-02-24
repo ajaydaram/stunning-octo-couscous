@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assests/css/main.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/systematic-theology/' | relative_url }}">Systematic Theology</a>
+                    <ul>
+                        <li><a href="{{ '/systematic-theology/theology-proper/' | relative_url }}">Theology Proper</a></li>
+                        <li><a href="{{ '/systematic-theology/soteriology/' | relative_url }}">Soteriology</a></li>
+                        <li><a href="{{ '/systematic-theology/christology/' | relative_url }}">Christology</a></li>
+                        <li><a href="{{ '/systematic-theology/pneumatology/' | relative_url }}">Pneumatology</a></li>
+                        <li><a href="{{ '/systematic-theology/ecclesiology/' | relative_url }}">Ecclesiology</a></li>
+                        <li><a href="{{ '/systematic-theology/eschatology/' | relative_url }}">Eschatology</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="{{ '/biblical-theology/' | relative_url }}">Biblical Theology</a>
+                    <ul>
+                        <li><a href="{{ '/biblical-theology/ot-theology/' | relative_url }}">OT Theology</a></li>
+                        <li><a href="{{ '/biblical-theology/nt-theology/' | relative_url }}">NT Theology</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ '/church-history/' | relative_url }}">Church History</a>
+                    <ul>
+                        <li><a href="{{ '/church-history/early-church/' | relative_url }}">Early Church</a></li>
+                        <li><a href="{{ '/church-history/medieval-church/' | relative_url }}">Medieval Church</a></li>
+                        <li><a href="{{ '/church-history/reformation/' | relative_url }}">Reformation</a></li>
+                        <li><a href="{{ '/church-history/modern-church/' | relative_url }}">Modern Church</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+                <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} Your Site. All rights reserved.</p>
+    </footer>
+</body>
+</html>

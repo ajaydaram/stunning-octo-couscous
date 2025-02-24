@@ -1,0 +1,47 @@
+- title: Home
+  url: /
+- title: Systematic Theology
+  url: /systematic-theology/
+  subtopics:
+    - title: Theology Proper
+      url: /systematic-theology/theology-proper/
+    - title: Christology
+      url: /systematic-theology/christology/
+    - title: Pneumatology
+      url: /systematic-theology/pneumatology/
+    - title: Anthropology
+      url: /systematic-theology/anthropology/
+    - title: Soteriology
+      url: /systematic-theology/soteriology/
+    - title: Ecclesiology
+      url: /systematic-theology/ecclesiology/
+    - title: Eschatology
+      url: /systematic-theology/eschatology/
+- title: Biblical Theology
+  url: /biblical-theology/
+  subtopics:
+    - title: Old Testament
+      url: /biblical-theology/old-testament/
+    - title: New Testament
+      url: /biblical-theology/new-testament/
+- title: Church History
+  url: /church-history/
+  subtopics:
+    - title: Patristics
+      url: /church-history/patristics/
+    - title: Medieval
+      url: /church-history/medieval/
+    - title: Reformation
+      url: /church-history/reformation/
+    - title: Modern
+      url: /church-history/modern/
+- title: About
+  url: /about/
+- title: Categories
+  url: /categories/
+- title: Tags
+  url: /tags/
+- title: Archives by Year
+  url: /years/
+- title: Contact
+  url: /contact/
