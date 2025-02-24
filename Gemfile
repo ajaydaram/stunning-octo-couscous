@@ -35,3 +35,7 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "jekyll-paginate"
 gem "jekyll-archives"
 gem "jekyll-sitemap"
+# ...existing code...
+gem 'json', '~> 2.6'
+gem 'sass-embedded', '~> 1.85.0'
+# ...existing code...
