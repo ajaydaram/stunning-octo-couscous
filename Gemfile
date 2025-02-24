@@ -37,5 +37,5 @@ gem "jekyll-archives"
 gem "jekyll-sitemap"
 # ...existing code...
 gem 'json', '~> 2.6'
-gem 'sass-embedded', '~> 1.85.0'
+gem 'sass-embedded', '~> 1.83', '>= 1.83.4'
 # ...existing code...
