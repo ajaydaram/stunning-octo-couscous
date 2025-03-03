@@ -100,5 +100,4 @@ By grounding our understanding of the Trinity in Scripture and historic Christia
 - **Stephen R. Holmes, *The Quest for the Trinity***
 - **Robert Letham, *The Holy Trinity: In Scripture, History, Theology, and Worship***
 
-Let me know if you need further refinements or additional citations!
 
