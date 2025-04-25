@@ -134,6 +134,27 @@ main {
         padding: 10px;
     }
 
+    header nav ul li ul {
+        position: static;
+        display: none;
+        width: 100%;
+        background: #444;
+    }
+
+    header nav ul li:hover > ul,
+    header nav ul li:focus-within > ul {
+        display: block;
+    }
+
+    header nav ul li ul li {
+        margin: 0;
+    }
+
+    header nav ul li ul li a {
+        padding: 10px;
+        width: 100%;
+    }
+
     main {
         margin: 10px auto;
         padding: 15px;
@@ -149,7 +170,7 @@ main {
     }
 
     footer {
-        font-size: 14px;
-        padding: 8px 0;
+        font-size: 12px; /* Reduced font size */
+        padding: 5px 0; /* Reduced padding */
     }
 }
